@@ -15,8 +15,9 @@ for line in sys.stdin:
   ### sadsadas
   ### sadsadas
   line = line.strip()
-  # split the line into words, output data type list
+  # replace punctuation . and , with whitespace
   line = line.replace('.', ' ').replace(',', ' ').replace('/', ' ')
+  # split the line into words based on whitespace, output data type list
   words = line.split()
   
   
